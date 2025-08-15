@@ -462,7 +462,7 @@ Future<void> _doStateChange(WidgetTester tester, VoidCallback callback) async {
 
 // Simulates a screen rotation by swapping the screen width and height.
 Future<void> _simulateScreenRotation(WidgetTester tester) async {
-  final oldViewSize = tester.binding.renderView.size;
+  final oldViewSize = tester.binding.renderViews.first.size;
 
   final newViewSize = Size(oldViewSize.height, oldViewSize.width);
 
